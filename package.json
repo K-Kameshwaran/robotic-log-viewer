@@ -1,0 +1,23 @@
+{
+  "name": "robotic-log-viewer",
+  "version": "1.0.0",
+  "description": "High-performance, zero-dependency robotic log viewer for inspecting ROS and runtime logs in the browser.",
+  "main": "app.js",
+  "scripts": {
+    "test": "node --test test.js",
+    "start": "npx http-server -p 8080 .",
+    "generate-sample": "node generate_actual_log.js",
+    "generate-stress-log": "node generate_logs.js"
+  },
+  "keywords": [
+    "robotics",
+    "ros",
+    "log-viewer",
+    "log-parser",
+    "javascript",
+    "vanilla-js",
+    "performance"
+  ],
+  "author": "",
+  "license": "MIT"
+}

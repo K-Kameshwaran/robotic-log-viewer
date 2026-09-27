@@ -1,0 +1,13 @@
+const fs = require('fs');
+
+const data = `2026-09-21 05:40:01.000 [INFO] [robot_controller] Robot system initialized successfully
+2026-09-21 05:40:01.117 [INFO] [robot_controller] Robot ID: AMR-001
+2026-09-21 05:40:01.234 [INFO] [safety_monitor] Safety state: CLEAR, emergency_stop=false
+2026-09-21 05:40:01.351 [INFO] [lidar_node] LiDAR connected: /dev/ttyUSB0
+2026-09-21 05:40:01.468 [INFO] [camera_node] RGB camera initialized at 30 FPS
+2026-09-21 05:40:04.915 [INFO] [localization] Pose: x=2.61 y=1.89 theta=0.02
+2026-09-21 05:40:04.996 [WARN] [network] Telemetry packet delay detected: 52 ms
+2026-09-21 05:40:05.414 [ERROR] [network] Telemetry connection lost: retrying connection`;
+
+fs.writeFileSync('actual_robot_run.log', data);
+console.log('actual_robot_run.log generated.');
